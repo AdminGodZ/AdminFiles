@@ -12,13 +12,13 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 <p align="center">
-  <a href="#✨-features">Features</a> •
-  <a href="#🚀-installation">Installation</a> •
-  <a href="#🔧-configuration">Configuration</a> •
-  <a href="#📚-usage">Usage</a> •
-  <a href="#🔒-security">Security</a> •
-  <a href="#⚙️-api">API</a> •
-  <a href="#📦-deployment">Deployment</a>
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-configuration">Configuration</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-security">Security</a> •
+  <a href="#%EF%B8%8F-api">API</a> •
+  <a href="#-deployment">Deployment</a>
 </p>
 
 </div>
@@ -364,13 +364,13 @@ Contributions to AdminFiles are welcome! Whether it's bug reports, feature reque
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/AdminGodZ/AdminFiles/blob/main/LICENSE) - see the LICENSE file for details.
 
 ---
 
 ## 💬 Support
 
-If you encounter any issues or have questions, please file an issue on the GitHub repository.
+If you encounter any issues or have questions, please file an issue on the GitHub repository or visit our contact page at https://admingod.ch/ for support.
 
 ---
 
