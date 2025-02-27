@@ -1,0 +1,20 @@
+.dropzone {
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.dropzone.active {
+  border-color: #bb86fc !important;
+  background-color: rgba(187, 134, 252, 0.1) !important;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+.upload-progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(187, 134, 252, 0.2);
+}
+
+.upload-progress-bar {
+  background-color: #bb86fc !important;
+}

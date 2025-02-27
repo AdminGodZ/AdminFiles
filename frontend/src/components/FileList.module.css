@@ -1,0 +1,26 @@
+.file-list-container {
+  width: 100%;
+}
+
+.file-list-item {
+  transition: background-color 0.2s ease;
+}
+
+.file-list-item:hover {
+  background-color: rgba(187, 134, 252, 0.08);
+}
+
+.file-icon {
+  color: #bb86fc;
+  font-size: 24px;
+}
+
+.download-button:hover {
+  color: #03dac6;
+  background-color: rgba(3, 218, 198, 0.1);
+}
+
+.delete-button:hover {
+  color: #cf6679;
+  background-color: rgba(207, 102, 121, 0.1);
+}
