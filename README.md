@@ -2,7 +2,7 @@
   
 # 🔐 AdminFiles
 
-<img src="https://via.placeholder.com/200x200.png?text=AdminFiles" alt="AdminFiles Logo" width="200" height="200">
+<img src="logo.svg" alt="AdminFiles Logo" width="200" height="200">
 
 **Secure, Modern Cloud Storage for Your Most Important Files**
 
