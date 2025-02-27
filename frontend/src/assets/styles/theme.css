@@ -1,0 +1,105 @@
+/* Custom theme variables and global styles */
+:root {
+  /* Primary color - Neon Purple */
+  --primary-main: #bb86fc;
+  --primary-light: #e2b9ff;
+  --primary-dark: #8754c9;
+  
+  /* Secondary color - Teal */
+  --secondary-main: #03dac6;
+  --secondary-light: #66fff8;
+  --secondary-dark: #00a896;
+  
+  /* Background colors */
+  --background-default: #121212;
+  --background-paper: #1f1f1f;
+  --background-elevated: #2d2d2d;
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-disabled: rgba(255, 255, 255, 0.5);
+  
+  /* Error color */
+  --error-main: #cf6679;
+  
+  /* Common values */
+  --border-radius: 8px;
+  --transition-duration: 0.2s;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 8px rgba(187, 134, 252, 0.25);
+  --glow-effect: 0 0 15px rgba(187, 134, 252, 0.5);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(187, 134, 252, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(187, 134, 252, 0.5);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(187, 134, 252, 0.3);
+  color: var(--text-primary);
+}
+
+/* Custom animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+  }
+}
+
+.glow-effect {
+  animation: glow 2s infinite;
+}
+
+/* Button effects */
+.neon-button {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  color: var(--primary-main);
+  border: 1px solid var(--primary-main);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-duration) ease;
+}
+
+.neon-button:hover {
+  background-color: rgba(187, 134, 252, 0.1);
+  box-shadow: var(--glow-effect);
+}
+
+.neon-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(187, 134, 252, 0.2);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.neon-button:hover:after {
+  width: 100%;
+}
