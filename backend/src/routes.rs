@@ -120,7 +120,6 @@ async fn list_files(
     Ok(HttpResponse::Ok().json(files))
 }
 
-// Download file endpoint
 #[get("/{file_id}/download")]
 async fn download_file(
     req: HttpRequest,
@@ -142,9 +141,16 @@ async fn download_file(
     
     // Send file
     let path = Path::new(&file.file_path);
+    
+    // Use content_disposition instead of with_filename
+    use actix_web::http::header::{ContentDisposition, DispositionType};
+    
     Ok(NamedFile::open(path)
         .map_err(|_| FileError::FileNotFound)?
-        .with_filename(file.original_filename))
+        .set_content_disposition(ContentDisposition {
+            disposition: DispositionType::Attachment,
+            parameters: vec![],
+        }))
 }
 
 // Delete file endpoint
